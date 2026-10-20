@@ -44,7 +44,7 @@
 
     const role = (user.role || '').toLowerCase();
     if (role === 'testpanel') {
-      window.location.href = '/testpanel';
+      window.location.replace('/ints/testpanel/SMSDashboard');
       return;
     }
     if (role === 'manager') {
@@ -59,7 +59,7 @@
       window.location.replace('/ints/client/SMSDashboard');
       return;
     }
-    window.location.replace('/owner');
+    window.location.replace('/ints/owner/SMSDashboard');
   }
 
   boot();

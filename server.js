@@ -2222,13 +2222,13 @@ function getSessionUser(req) {
 }
 
 const ROLE_HOME_URL = {
-  owner: '/owner',
-  admin: '/owner',
+  owner: '/ints/owner/SMSDashboard',
+  admin: '/ints/owner/SMSDashboard',
   manager: '/ints/manager/SMSDashboard',
   agent: '/ints/agent/SMSDashboard',
   client: '/ints/client/SMSDashboard',
   reseller: '/ints/client/SMSDashboard',
-  testpanel: '/testpanel'
+  testpanel: '/ints/testpanel/SMSDashboard'
 };
 
 // ── Strict Role Guard Middleware for Express Routes ────────────
@@ -2237,12 +2237,12 @@ function requireRole(allowedRoles) {
   return (req, res, next) => {
     const user = getSessionUser(req);
     if (!user) {
-      return res.redirect('/login');
+      return res.redirect('/ints/login');
     }
     const userRole = (user.role || '').toLowerCase();
     const isOwner = userRole === 'owner' || userRole === 'admin';
     if (!normalizedAllowed.includes(userRole) && !(isOwner && normalizedAllowed.includes('owner'))) {
-      return res.redirect(ROLE_HOME_URL[userRole] || '/login');
+      return res.redirect(ROLE_HOME_URL[userRole] || '/ints/login');
     }
     next();
   };
@@ -2275,8 +2275,8 @@ function requireApiRole(allowedRoles) {
   };
 }
 
-// ── Role Page Routes with Strict Server-Side Isolation ───────────
-app.get(['/login', '/ints/login'], (req, res) => {
+// ── Role Page Routes with Strict Server-Side Isolation (/ints/ namespace) ───────────
+app.get('/ints/login', (req, res) => {
   // If navigating directly to login, always deliver the login screen freshly
   res.setHeader('Set-Cookie', [
     `alpha_session_token=; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT; SameSite=Lax`,
@@ -2285,39 +2285,33 @@ app.get(['/login', '/ints/login'], (req, res) => {
   sendInjectedHtml(res, path.join(STATIC_DIR, 'login.html'));
 });
 
+// Any direct access to /login or / redirects immediately to /ints/login
+app.get('/login', (req, res) => {
+  res.redirect('/ints/login');
+});
+
 app.get('/', (req, res) => {
   const user = getSessionUser(req);
   if (user) {
     const role = (user.role || '').toLowerCase();
-    return res.redirect(ROLE_HOME_URL[role] || '/owner');
+    return res.redirect(ROLE_HOME_URL[role] || '/ints/owner/SMSDashboard');
   }
-  sendInjectedHtml(res, path.join(STATIC_DIR, 'login.html'));
+  return res.redirect('/ints/login');
 });
 
-app.get(['/owner', '/dashboard'], requireRole(['owner', 'admin']), (req, res) => {
-  sendInjectedHtml(res, path.join(STATIC_DIR, 'index.html'));
-});
-
-app.get('/manager', requireRole(['manager']), (req, res) => {
-  sendInjectedHtml(res, path.join(STATIC_DIR, 'manager.html'));
-});
-
-app.get('/agent', requireRole(['agent']), (req, res) => {
-  sendInjectedHtml(res, path.join(STATIC_DIR, 'agent.html'));
-});
-
-app.get('/client', requireRole(['client', 'reseller']), (req, res) => {
-  sendInjectedHtml(res, path.join(STATIC_DIR, 'client.html'));
-});
-
-app.get(['/testpanel', '/testpanel/*'], requireRole(['testpanel']), (req, res) => {
-  sendInjectedHtml(res, path.join(STATIC_DIR, 'testpanel.html'));
+// Non-ints panel routes: Direct access without /ints redirects to /ints/login
+app.get(['/owner', '/dashboard', '/manager', '/agent', '/client', '/testpanel', '/testpanel/*'], (req, res) => {
+  const user = getSessionUser(req);
+  if (user) {
+    const role = (user.role || '').toLowerCase();
+    return res.redirect(ROLE_HOME_URL[role] || '/ints/login');
+  }
+  return res.redirect('/ints/login');
 });
 
 app.get(['/public', '/public/*'], (req, res) => {
   sendInjectedHtml(res, path.join(STATIC_DIR, 'testpanel.html'));
 });
-
 
 app.get('/ints', (req, res) => res.redirect('/ints/login'));
 app.get('/ints/test', requireRole(['testpanel']), (req, res) => sendInjectedHtml(res, path.join(STATIC_DIR, 'testpanel.html')));
@@ -2329,34 +2323,34 @@ app.get('/ints/:role', (req, res) => {
   const targetRole = (req.params.role || '').toLowerCase();
   const user = getSessionUser(req);
   if (!user) {
-    return res.redirect('/login');
+    return res.redirect('/ints/login');
   }
   const userRole = (user.role || '').toLowerCase();
   const isOwnerOrAdmin = r => r === 'admin' || r === 'owner';
   if (userRole !== targetRole && !(isOwnerOrAdmin(userRole) && isOwnerOrAdmin(targetRole))) {
-    return res.redirect(ROLE_HOME_URL[userRole] || '/login');
+    return res.redirect(ROLE_HOME_URL[userRole] || '/ints/login');
   }
   if (PANELS[targetRole]) {
     return res.redirect(`/ints/${targetRole}/SMSDashboard`);
   }
-  res.redirect('/login');
+  res.redirect('/ints/login');
 });
 
 app.get('/ints/:role/:page', (req, res) => {
   const targetRole = (req.params.role || '').toLowerCase();
   const user = getSessionUser(req);
   if (!user) {
-    return res.redirect('/login');
+    return res.redirect('/ints/login');
   }
   const userRole = (user.role || '').toLowerCase();
   const isOwnerOrAdmin = r => r === 'admin' || r === 'owner';
   if (userRole !== targetRole && !(isOwnerOrAdmin(userRole) && isOwnerOrAdmin(targetRole))) {
-    return res.redirect(ROLE_HOME_URL[userRole] || '/login');
+    return res.redirect(ROLE_HOME_URL[userRole] || '/ints/login');
   }
   if (PANELS[targetRole]) {
     return sendInjectedHtml(res, PANELS[targetRole]);
   }
-  res.redirect('/login');
+  res.redirect('/ints/login');
 });
 
 function isUsernameTaken(newUsername, excludeId = null, currentTable = null) {

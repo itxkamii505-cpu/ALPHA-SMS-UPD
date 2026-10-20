@@ -582,7 +582,7 @@ loginForm.addEventListener('submit', async (e) => {
     }
 
     const nr = (role || '').toLowerCase();
-    let targetUrl = '/owner';
+    let targetUrl = '/ints/owner/SMSDashboard';
     if (nr === 'manager') {
       targetUrl = '/ints/manager/SMSDashboard';
     } else if (nr === 'agent') {
@@ -590,9 +590,9 @@ loginForm.addEventListener('submit', async (e) => {
     } else if (nr === 'client' || nr === 'reseller') {
       targetUrl = '/ints/client/SMSDashboard';
     } else if (nr === 'testpanel') {
-      targetUrl = '/testpanel';
+      targetUrl = '/ints/testpanel/SMSDashboard';
     } else {
-      targetUrl = '/owner';
+      targetUrl = '/ints/owner/SMSDashboard';
     }
 
     const delim = targetUrl.includes('?') ? '&' : '?';

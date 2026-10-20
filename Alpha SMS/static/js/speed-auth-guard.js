@@ -10,13 +10,13 @@
   'use strict';
 
   const ROLE_ROUTES = {
-    owner: '/owner',
-    admin: '/owner',
+    owner: '/ints/owner/SMSDashboard',
+    admin: '/ints/owner/SMSDashboard',
     manager: '/ints/manager/SMSDashboard',
     agent: '/ints/agent/SMSDashboard',
     client: '/ints/client/SMSDashboard',
     reseller: '/ints/client/SMSDashboard',
-    testpanel: '/testpanel'
+    testpanel: '/ints/testpanel/SMSDashboard'
   };
 
   function normalizeRole(r) {
