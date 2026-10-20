@@ -1,0 +1,191 @@
+[
+  {
+    "id": 21,
+    "actor": "Kamran_Bhatti",
+    "action": "SMPP Account Deleted",
+    "details": "Deleted SMPP account #1 (Vodafone Direct)",
+    "module": "SMPP",
+    "ip": "127.0.0.1",
+    "timestamp": "2026-10-20T04:47:24.747Z"
+  },
+  {
+    "id": 20,
+    "actor": "Kamran_Bhatti",
+    "action": "SMPP Account Updated",
+    "details": "Updated SMPP account #1 (Vodafone Direct)",
+    "module": "SMPP",
+    "ip": "127.0.0.1",
+    "timestamp": "2026-10-20T04:47:24.713Z"
+  },
+  {
+    "id": 19,
+    "actor": "Kamran_Bhatti",
+    "action": "SMPP Account Added",
+    "details": "Added SMPP account for Vodafone Direct (smpp)",
+    "module": "SMPP",
+    "ip": "127.0.0.1",
+    "timestamp": "2026-10-20T04:47:24.651Z"
+  },
+  {
+    "id": 18,
+    "actor": "Kamran_Bhatti",
+    "action": "Login Failed",
+    "details": "Invalid username or password",
+    "module": "Auth",
+    "ip": "127.0.0.1",
+    "timestamp": "2026-10-20T04:46:57.796Z"
+  },
+  {
+    "id": 17,
+    "actor": "owner",
+    "action": "Login Failed",
+    "details": "Invalid username or password",
+    "module": "Auth",
+    "ip": "127.0.0.1",
+    "timestamp": "2026-10-20T03:16:21.790Z"
+  },
+  {
+    "id": 16,
+    "actor": "owner",
+    "action": "Login Failed",
+    "details": "Invalid username or password",
+    "module": "Auth",
+    "ip": "127.0.0.1",
+    "timestamp": "2026-10-20T03:16:12.705Z"
+  },
+  {
+    "id": 15,
+    "actor": "Kamran_Bhatti",
+    "action": "Login Success",
+    "details": "Logged in as Owner",
+    "module": "Auth",
+    "ip": "127.0.0.1",
+    "timestamp": "2026-10-20T03:04:40.401Z"
+  },
+  {
+    "id": 14,
+    "actor": "alpha",
+    "action": "Login Success",
+    "details": "Logged in as Manager",
+    "module": "Auth",
+    "ip": "127.0.0.1",
+    "timestamp": "2026-10-20T03:03:35.886Z"
+  },
+  {
+    "id": 13,
+    "actor": "Agent_Alpha",
+    "action": "Login Success",
+    "details": "Logged in as Agent",
+    "module": "Auth",
+    "ip": "127.0.0.1",
+    "timestamp": "2026-10-20T03:03:04.199Z"
+  },
+  {
+    "id": 12,
+    "actor": "Kamran_Bhatti",
+    "action": "Login Success",
+    "details": "Logged in as Owner",
+    "module": "Auth",
+    "ip": "127.0.0.1",
+    "timestamp": "2026-10-20T03:00:23.498Z"
+  },
+  {
+    "id": 11,
+    "actor": "Kamran_Bhatti",
+    "action": "Login Success",
+    "details": "Logged in as Owner",
+    "module": "Auth",
+    "ip": "127.0.0.1",
+    "timestamp": "2026-10-20T02:57:57.654Z"
+  },
+  {
+    "id": 10,
+    "actor": "Kamran_Bhatti",
+    "action": "Login Failed",
+    "details": "Invalid username or password",
+    "module": "Auth",
+    "ip": "127.0.0.1",
+    "timestamp": "2026-10-20T02:57:06.454Z"
+  },
+  {
+    "id": 9,
+    "actor": "Kamran_Bhatti",
+    "action": "Login Success",
+    "details": "Logged in as Owner",
+    "module": "Auth",
+    "ip": "127.0.0.1",
+    "timestamp": "2026-10-17T09:38:01.655Z"
+  },
+  {
+    "id": 8,
+    "actor": "client1",
+    "action": "Login Failed",
+    "details": "Invalid username or password",
+    "module": "Auth",
+    "ip": "127.0.0.1",
+    "timestamp": "2026-10-13T10:21:40.874Z"
+  },
+  {
+    "id": 7,
+    "actor": "agent1",
+    "action": "Login Failed",
+    "details": "Invalid username or password",
+    "module": "Auth",
+    "ip": "127.0.0.1",
+    "timestamp": "2026-10-13T10:21:40.870Z"
+  },
+  {
+    "id": 6,
+    "actor": "manager1",
+    "action": "Login Failed",
+    "details": "Invalid username or password",
+    "module": "Auth",
+    "ip": "127.0.0.1",
+    "timestamp": "2026-10-13T10:21:40.865Z"
+  },
+  {
+    "id": 5,
+    "actor": "Kamran_Bhatti",
+    "action": "Login Failed",
+    "details": "Invalid username or password",
+    "module": "Auth",
+    "ip": "127.0.0.1",
+    "timestamp": "2026-10-13T10:21:40.854Z"
+  },
+  {
+    "id": 4,
+    "actor": "Kamran_Bhatti",
+    "action": "Update agents",
+    "details": "Updated item #1",
+    "module": "agents",
+    "ip": "127.0.0.1",
+    "timestamp": "2026-10-13T10:07:56.969Z"
+  },
+  {
+    "id": 3,
+    "actor": "Admin",
+    "action": "Bulk Delete Numbers",
+    "details": "Deleted 1001 numbers",
+    "module": "Numbers",
+    "ip": "127.0.0.1",
+    "timestamp": "2026-10-13T10:02:18.527Z"
+  },
+  {
+    "id": 2,
+    "actor": "Admin",
+    "action": "Import Numbers",
+    "details": "Imported 201 numbers to range \"Peru_KB1\"",
+    "module": "Numbers",
+    "ip": "127.0.0.1",
+    "timestamp": "2026-10-13T10:01:40.075Z"
+  },
+  {
+    "id": 1,
+    "actor": "Kamran_Bhatti",
+    "action": "Login Success",
+    "details": "Logged in as Owner",
+    "module": "Auth",
+    "ip": "127.0.0.1",
+    "timestamp": "2026-10-13T10:00:49.325Z"
+  }
+]
