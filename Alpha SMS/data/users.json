@@ -1,5 +1,23 @@
 [
   {
+    "id": 4,
+    "username": "ITXKAMI",
+    "role": "Manager",
+    "email": "",
+    "password": "$2b$10$8bbeYm/MZgUYfsQKNZsS2eIXecKjnJxp66L7yEoJkbxZgYe03Bv2m",
+    "balance": 0,
+    "created": "2026-10-20T06:40:56.298Z",
+    "pending_2fa_secret": null,
+    "two_fa": true,
+    "two_fa_secret": "6HHAVRAX3EZJVK7IO3WM",
+    "two_fa_backup_codes": [
+      "BK-7C4F0A-67841B",
+      "BK-6DA940-B11733",
+      "BK-B49E71-E0B41F"
+    ],
+    "commission_percent": 0
+  },
+  {
     "id": 3,
     "username": "alpha",
     "role": "Manager",

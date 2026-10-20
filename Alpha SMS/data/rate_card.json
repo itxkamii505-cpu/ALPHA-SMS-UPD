@@ -1,5 +1,15 @@
 [
   {
+    "id": 6,
+    "country": "Ghana",
+    "provider": "Manual",
+    "buy_rate": 0.01,
+    "sell_rate": 0.008,
+    "margin": "20%",
+    "active": true,
+    "created": "2026-10-20T06:45:16.643Z"
+  },
+  {
     "id": 5,
     "country": "TestLand",
     "provider": "Manual",

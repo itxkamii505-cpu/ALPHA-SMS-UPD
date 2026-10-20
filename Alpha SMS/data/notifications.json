@@ -1,5 +1,24 @@
 [
   {
+    "id": 18,
+    "recipient_role": "manager",
+    "recipient_id": 4,
+    "recipient_username": "ITXKAMI",
+    "title": "Numbers Assigned by Owner (3000)",
+    "message": "Owner Kamran_Bhatti assigned 3000 number(s) in range \"Ghana ALPHA AS2\" to your account.",
+    "body": "Owner Kamran_Bhatti assigned 3000 number(s) in range \"Ghana ALPHA AS2\" to your account.",
+    "type": "allocation",
+    "range_id": 2,
+    "range_name": "Ghana ALPHA AS2",
+    "count": 3000,
+    "actor_role": "Owner",
+    "actor_name": "Kamran_Bhatti",
+    "metadata": {},
+    "read": false,
+    "created": "2026-10-20T06:50:51.717Z",
+    "timestamp": "2026-10-20T06:50:51.717Z"
+  },
+  {
     "id": 17,
     "recipient_role": "client",
     "recipient_id": 1,

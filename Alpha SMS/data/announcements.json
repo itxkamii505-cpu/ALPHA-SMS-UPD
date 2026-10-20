@@ -1,5 +1,18 @@
 [
   {
+    "id": 19,
+    "title": "Numbers Assigned by Owner (3000)",
+    "body": "Owner Kamran_Bhatti assigned 3000 number(s) in range \"Ghana ALPHA AS2\" to your account.",
+    "type": "success",
+    "role": "Manager",
+    "recipient_id": 4,
+    "recipient_username": "ITXKAMI",
+    "agent_id": null,
+    "manager_id": null,
+    "created": "2026-10-20T06:50:51.717Z",
+    "created_at": "2026-10-20T06:50:51.717Z"
+  },
+  {
     "id": 18,
     "title": "Number Revoked (1)",
     "body": "Your Agent has revoked number 51900288641 in range \"Peru_KB1\" from your panel.",

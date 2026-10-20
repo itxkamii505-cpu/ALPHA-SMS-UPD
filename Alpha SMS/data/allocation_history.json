@@ -1,5 +1,18 @@
 [
   {
+    "id": 6,
+    "from_user": "Owner",
+    "to_user": "ITXKAMI",
+    "to_role": "Manager",
+    "range_id": 2,
+    "range_start": "",
+    "range_end": "",
+    "count": 3000,
+    "timestamp": "2026-10-20T06:50:51.715Z",
+    "status": "completed",
+    "notes": ""
+  },
+  {
     "id": 5,
     "from_user": "Manager",
     "to_user": "AlphaAgent",
