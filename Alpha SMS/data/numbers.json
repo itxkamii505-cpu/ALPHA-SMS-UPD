@@ -124815,8 +124815,8 @@
     "provider": "Manual",
     "otp_limit": 30,
     "allocated_at": "2026-10-20T06:45:16.671Z",
-    "last_sms": null,
-    "sms_count": 0,
+    "last_sms": "2026-10-20T07:35:23.000Z",
+    "sms_count": 6,
     "notes": ""
   },
   {
@@ -124832,8 +124832,8 @@
     "provider": "Manual",
     "otp_limit": 30,
     "allocated_at": "2026-10-20T06:45:16.671Z",
-    "last_sms": null,
-    "sms_count": 0,
+    "last_sms": "2026-10-20T07:38:17.000Z",
+    "sms_count": 3,
     "notes": ""
   },
   {
@@ -125614,8 +125614,8 @@
     "provider": "Manual",
     "otp_limit": 30,
     "allocated_at": "2026-10-20T06:45:16.671Z",
-    "last_sms": null,
-    "sms_count": 0,
+    "last_sms": "2026-10-20T07:36:47.000Z",
+    "sms_count": 1,
     "notes": ""
   },
   {

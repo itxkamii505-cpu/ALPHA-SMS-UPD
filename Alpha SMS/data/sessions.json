@@ -133,5 +133,20 @@
     "commission_rate": 5,
     "created": 1792487429871,
     "lastActive": 1792487429871
+  },
+  "e4518dfd4750e5f647090d010090249e44e963d59c70b5bf3b8b59c96de39e7a": {
+    "id": 1,
+    "username": "Kamran_Bhatti",
+    "role": "Owner",
+    "token": "e4518dfd4750e5f647090d010090249e44e963d59c70b5bf3b8b59c96de39e7a",
+    "email": "kamran@alphasms.com",
+    "email_bound": false,
+    "two_fa": false,
+    "source": "users",
+    "manager_id": null,
+    "agent_id": null,
+    "commission_rate": 5,
+    "created": 1792488711205,
+    "lastActive": 1792488711205
   }
 }
