@@ -1,5 +1,14 @@
 [
   {
+    "id": 51,
+    "actor": "Kamran_Bhatti",
+    "action": "Login Success",
+    "details": "Logged in as Owner",
+    "module": "Auth",
+    "ip": "127.0.0.1",
+    "timestamp": "2026-10-20T09:39:21.270Z"
+  },
+  {
     "id": 50,
     "actor": "Kamran_Bhatti",
     "action": "Login Success",

@@ -6,9 +6,9 @@
     "token": "39ef9ef6dc978c8d4cddea04c88965fcf10c6e073e64e240258e2c8ec2915e2c",
     "interval": 5,
     "active": true,
-    "last_pulled_at": "2026-10-20T09:38:42.847Z",
-    "last_status": "Active — Up to date",
-    "total_pulled": 350,
+    "last_pulled_at": "2026-10-20T09:39:46.898Z",
+    "last_status": "OK — pulled 2 new message(s)",
+    "total_pulled": 355,
     "created": "2026-10-20T08:30:48.940Z"
   }
 ]
