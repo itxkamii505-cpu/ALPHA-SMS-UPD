@@ -1,1 +1,19 @@
-[]
+[
+  {
+    "company": "Tech sms",
+    "interconnect_type": "smpp-client",
+    "whitelist_ip": "",
+    "status": "active",
+    "host": "api.techsms.org",
+    "port": 2775,
+    "system_id": "l082hs",
+    "password": "bmY5MXBzag==",
+    "bind_type": "transceiver",
+    "id": 1,
+    "limit": 500,
+    "total_otp": 0,
+    "otp_today": 0,
+    "messages_today": 0,
+    "created": "2026-10-20T05:56:07.395Z"
+  }
+]

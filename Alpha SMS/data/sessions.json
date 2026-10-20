@@ -73,5 +73,50 @@
     "commission_rate": 5,
     "created": 1792465480400,
     "lastActive": 1792465480400
+  },
+  "feef53c2f0a2ab3dbc362a45258f35a4d446bde8b3d433f33b001cc62b7d6d93": {
+    "id": 1,
+    "username": "Kamran_Bhatti",
+    "role": "Owner",
+    "token": "feef53c2f0a2ab3dbc362a45258f35a4d446bde8b3d433f33b001cc62b7d6d93",
+    "email": "kamran@alphasms.com",
+    "email_bound": false,
+    "two_fa": false,
+    "source": "users",
+    "manager_id": null,
+    "agent_id": null,
+    "commission_rate": 5,
+    "created": 1792475908465,
+    "lastActive": 1792476026945
+  },
+  "b21349e48dd55c43e5de801be386018840d5e65394ff9c2868736889574186ae": {
+    "id": 2,
+    "username": "Moeez_Bhatti",
+    "role": "Agent",
+    "token": "b21349e48dd55c43e5de801be386018840d5e65394ff9c2868736889574186ae",
+    "email": "",
+    "email_bound": false,
+    "two_fa": false,
+    "source": "agents",
+    "manager_id": null,
+    "agent_id": null,
+    "commission_rate": 20,
+    "created": 1792476188363,
+    "lastActive": 1792476626115
+  },
+  "cb67cf88699c4d6568fc4cdd144d32a6749a3419e231aceaa37a1f8ea15f292d": {
+    "id": 1,
+    "username": "Kamran_Bhatti",
+    "role": "Owner",
+    "token": "cb67cf88699c4d6568fc4cdd144d32a6749a3419e231aceaa37a1f8ea15f292d",
+    "email": "kamran@alphasms.com",
+    "email_bound": false,
+    "two_fa": false,
+    "source": "users",
+    "manager_id": null,
+    "agent_id": null,
+    "commission_rate": 5,
+    "created": 1792476839464,
+    "lastActive": 1792476839464
   }
 }

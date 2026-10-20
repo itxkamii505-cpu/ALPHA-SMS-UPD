@@ -1,5 +1,104 @@
 [
   {
+    "id": 28,
+    "actor": "Kamran_Bhatti",
+    "action": "Login Success",
+    "details": "Logged in as Owner",
+    "module": "Auth",
+    "ip": "127.0.0.1",
+    "timestamp": "2026-10-20T06:13:59.465Z"
+  },
+  {
+    "id": 27,
+    "actor": "Moeez_Bhatti",
+    "action": "Login Success",
+    "details": "Logged in as Agent",
+    "module": "Auth",
+    "ip": "127.0.0.1",
+    "timestamp": "2026-10-20T06:03:08.364Z"
+  },
+  {
+    "id": 26,
+    "actor": "Kamran_Bhatti",
+    "action": "Create agents",
+    "details": "Created item #2",
+    "module": "agents",
+    "ip": "127.0.0.1",
+    "timestamp": "2026-10-20T06:02:23.026Z"
+  },
+  {
+    "id": "c261ad07-fff6-4bcb-8ef6-007147802287",
+    "timestamp": "2026-10-20T05:59:42.866Z",
+    "user": "Admin",
+    "action": "Backup Exported",
+    "detail": "Downloaded full system backup (mait_sms_backup_2026-10-20T05-59-42.zip)",
+    "module": "System",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "784d5422-310a-4adf-9fb2-ad0fcefd4300",
+    "timestamp": "2026-10-20T05:59:42.522Z",
+    "user": "Admin",
+    "action": "Backup Exported",
+    "detail": "Downloaded full system backup (mait_sms_backup_2026-10-20T05-59-42.zip)",
+    "module": "System",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "75e64f3f-6430-49bc-8015-751ddaeb0de5",
+    "timestamp": "2026-10-20T05:59:42.063Z",
+    "user": "Admin",
+    "action": "Backup Exported",
+    "detail": "Downloaded full system backup (mait_sms_backup_2026-10-20T05-59-41.zip)",
+    "module": "System",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": "1d2a0676-0435-4953-86cb-b881948ff439",
+    "timestamp": "2026-10-20T05:59:40.807Z",
+    "user": "Admin",
+    "action": "Backup Exported",
+    "detail": "Downloaded full system backup (mait_sms_backup_2026-10-20T05-59-40.zip)",
+    "module": "System",
+    "ip": "127.0.0.1"
+  },
+  {
+    "id": 25,
+    "actor": "Kamran_Bhatti",
+    "action": "Login Success",
+    "details": "Logged in as Owner",
+    "module": "Auth",
+    "ip": "127.0.0.1",
+    "timestamp": "2026-10-20T05:58:28.465Z"
+  },
+  {
+    "id": 24,
+    "actor": "Kamran_Bhatti",
+    "action": "SMPP Account Added",
+    "details": "Added SMPP account for Tech sms (smpp-client)",
+    "module": "SMPP",
+    "ip": "127.0.0.1",
+    "timestamp": "2026-10-20T05:56:07.395Z"
+  },
+  {
+    "id": 23,
+    "actor": "Kamran_Bhatti",
+    "action": "Login Success",
+    "details": "Logged in as Owner",
+    "module": "Auth",
+    "ip": "127.0.0.1",
+    "timestamp": "2026-10-20T05:55:04.188Z"
+  },
+  {
+    "id": 22,
+    "actor": "Kamran_Bhatti",
+    "action": "Login Success",
+    "details": "Logged in as Owner",
+    "module": "Auth",
+    "ip": "127.0.0.1",
+    "timestamp": "2026-10-20T05:47:32.763Z"
+  },
+  {
     "id": 21,
     "actor": "Kamran_Bhatti",
     "action": "SMPP Account Deleted",

@@ -1,8 +1,19 @@
 [
   {
+    "id": 2,
+    "username": "Moeez_Bhatti",
+    "password": "$2b$10$vq1fCeqzow.Cc4miZA7iJO5zT18QQDfdhNswe6ojR6J1m3iv1Izy.",
+    "manager_id": null,
+    "full_name": "",
+    "commission_rate": 20,
+    "balance": 0,
+    "status": "active",
+    "created": "2026-10-20T06:02:22.887Z"
+  },
+  {
     "id": 1,
     "username": "Agent_Alpha",
-    "password": "agent123",
+    "password": "$2b$10$9ko.NcIuAoCX9MNS2bMzmOkSXjsjUu2yBUnx2i6jN/2EvV5eKc2yS",
     "role": "Agent",
     "full_name": "Alpha Agent",
     "email": "agent@alphasms.com",
